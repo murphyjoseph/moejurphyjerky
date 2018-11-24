@@ -15,7 +15,10 @@ default: &default
   cache_manifest: false
 
   extensions:
+    - .jsx
     - .js
+    - .ts
+    - .tsx
     - .sass
     - .scss
     - .css
@@ -27,6 +30,7 @@ default: &default
     - .gif
     - .jpeg
     - .jpg
+    - .json
 
 development:
   <<: *default
