@@ -4,6 +4,11 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+
+  # Was getting errors from rails server link below fixed it
+  # https://github.com/rails/webpacker/pull/1747#issuecomment-430770094
+  require 'spring/watcher' if defined?(::Spring)
+
   config.cache_classes = false
 
   # Do not eager load code on boot.

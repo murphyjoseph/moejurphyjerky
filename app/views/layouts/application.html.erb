@@ -6,9 +6,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-
+    <Hello name="John"></Hello>
+    <Welcome></Welcome>
+    <h1>YOYOYO</h1>
     <%= yield %>
 
   </body>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'hello_react', 'data-turbolinks-track' => true %>
 </html>
